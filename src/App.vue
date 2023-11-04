@@ -107,7 +107,7 @@ onMounted(() => {
 <template>
   <div flex flex-col w-full h-full>
     <div text-44px text-center w-full color="#000" fw-600 h-60px flex items-center justify-center mt-10px>
-      兔了个兔
+      学了个校
     </div>
     <div ref="containerRef" flex-1 flex>
       <div w-full relative flex-1>
@@ -123,7 +123,7 @@ onMounted(() => {
       </div>
       <transition name="bounce">
         <div v-if="isWin" color="#000" flex items-center justify-center w-full text-28px fw-bold>
-          成功加入兔圈~
+          成功加入学圈~
         </div>
       </transition>
       <transition name="bounce">
@@ -170,7 +170,7 @@ onMounted(() => {
         color="#000"
         i-carbon-logo-github
         rel="noreferrer"
-        href="https://github.com/chenxch"
+        href="https://github.com/crazychloe03"
         target="_blank"
         title="GitHub"
       />
