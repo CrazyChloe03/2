@@ -81,7 +81,7 @@ function handleWin() {
 function handleLose() {
   loseAudioRef.value?.play()
   setTimeout(() => {
-    alert('槽位已满，再接再厉~')
+    alert('槽位已满，再接再厉吧~')
     // window.location.reload()
     nodes.value = []
     removeList.value = []
@@ -128,7 +128,7 @@ onMounted(() => {
       </transition>
       <transition name="bounce">
         <div v-if="showTip" color="#000" flex items-center justify-center w-full text-28px fw-bold>
-          第{{ curLevel + 1 }}关
+          第{{ curLevel + 1 }}关卡
         </div>
       </transition>
     </div>
@@ -156,15 +156,15 @@ onMounted(() => {
 
     <div h-50px flex items-center w-full justify-center>
       <button :disabled="removeFlag" mr-10px @click="handleRemove">
-        移出前三个
+        移出前三个图
       </button>
       <button :disabled="backFlag" @click="handleBack">
-        回退
+        回退一个
       </button>
     </div>
     <div w-full color="#000" fw-600 text-center pb-10px>
-      <span mr-20px>designer: Teacher Face</span>
-      by: Xc
+      <span mr-20px>designer: LOL</span>
+      by: Crazychloe
       <a
         class="icon-btn"
         color="#000"
